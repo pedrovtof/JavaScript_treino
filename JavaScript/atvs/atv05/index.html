@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eventos doom</title>
+    <style>
+        body{
+            background-color: rgb(65, 124, 73);
+        }
+        main.uu{
+            background-color: brown;
+            text-align: center;
+            color: antiquewhite;
+            height: 5em;
+            width: 5em;
+            line-height: 5em;
+        }
+    </style>
+</head>
+<body>
+    <main class="uu" onclick="luz()" onmouseout="apagar()">
+        interagir...
+    </main>
+    <script>
+            function luz(){
+        var acender = document.body.querySelector('main.uu')
+        acender.innerHTML='acendeu pai';
+        var fundo = document.body
+        fundo.style.backgroundColor='white';
+    }
+            function apagar(){
+        var off = document.body.querySelector('main.uu')
+        off.innerHTML='acender';
+        var claridade = document.body
+        claridade.style.backgroundColor='black'
+            }
+    </script>
+</body>
+</html>

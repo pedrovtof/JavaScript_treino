@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>doom</title>
+    <style>
+        body{
+            text-align:  center;
+            background-color: crimson;
+        }
+    </style>
+</head>
+<body>
+        <h1>begin</h1>
+        <p>resultado</p>
+        <p class="oba">clique em mim</p>
+        <div><strong> <br> Aprendendo DOM</strong></div>
+        <script>
+            var testi = document.body.getElementsByTagName('h1')[0];
+            //testi.style.backgroundColor='blue'
+            var pe1 = window.document.getElementsByTagName('p')[1];
+            //pe1.style.textAlign='left';
+            //document.write('olha oh '+ pe1.innerText);innerhtml;
+            //var test2 = document.body.getElementsByClassName('oba')[0]//.innerHTML='aguarde'
+            //test2.innerHTML='ore'
+            var test3 = document.body.querySelector('p.oba');
+            //test3.style.textAlign='right';
+        </script>
+</body>
+</html>

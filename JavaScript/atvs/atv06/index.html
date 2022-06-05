@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>somando</title>
+    <style>
+        *{background-color: blueviolet;}
+        h1{color: chartreuse;
+        text-align: center;}
+        main{text-align: center;}
+        main>input{
+            background-color: white;
+        }
+        main>p.resultado{
+            box-sizing: content-box;
+            box-shadow: 1em;
+            width: 180px;
+            height: 50px;
+            padding: 50px;
+            display: inline-block;
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <h1>somando valor</h1>
+    </header>
+<main>
+    <input type="number" name="t1" id="t1">
+    <br>
+    <br>
+    <input type="number" name="t2" id="t2">
+    <br>
+    <br>
+    <input type="button" value="+" onclick="somar()">
+    <input type="button" value="-" onclick="subtrair()">
+    <input type="button" value="*" onclick="multiplicar()">
+    <input type="button" value="/" onclick="dividir()">
+    <br>
+    <br>
+    <p class="resultado">
+        :[
+    </p>
+    <script>
+        function somar(){
+            var caixa1 = window.document.querySelector('input#t1')
+            var caixa2 = window.document.querySelector('input#t2')
+            var result = window.document.querySelector('p.resultado')
+            var n1 = Number(caixa1.value)
+            var n2 = Number(caixa2.value)
+            var somando = n1+n2
+            result.innerHTML=`A soma entre ${n1} e ${n2} = ${somando}   :]`
+         }
+        function subtrair(){
+            var caixa3 = window.document.querySelector('input#t1')
+            var caixa4 = window.document.querySelector('input#t2')
+            var result = window.document.querySelector('p.resultado')
+            var n3 = Number(caixa3.value)
+            var n4 = Number(caixa4.value)
+            var somando2 = n3-n4
+            result.innerHTML=`A subtração entre ${n3} e ${n4} = ${somando2}   :]`
+        }
+        function multiplicar(){
+            var caixa5 = window.document.querySelector('input#t1')
+            var caixa6 = window.document.querySelector('input#t2')
+            var result = window.document.querySelector('p.resultado')
+            var n5 = Number(caixa5.value)
+            var n6 = Number(caixa6.value)
+            var somando3 = n5*n6
+            result.innerHTML=`A multiplicação entre ${n5} e ${n6} = ${somando3}   :]`
+        }
+        function dividir(){
+            var caixa7 = window.document.querySelector('input#t1')
+            var caixa8 = window.document.querySelector('input#t2')
+            var result = window.document.querySelector('p.resultado')
+            var n7 = Number(caixa7.value)
+            var n8 = Number(caixa8.value)
+            var somando4 = n7/n8
+            result.innerHTML=`A divisão entre ${n7} e ${n8} = ${somando4}   :]`
+        }
+        /*
+_______0__o_o__o_0_0_o_o__0
+______0___o__o__o0_0__o_o__0
+_____0___o__o_o__0_0__o___o__0
+____0_o___o___o__0_0___o___o__0
+____00o0000o00o0o0_0o00o00oo0oo0
+___000o0o00000o000_000o00o0o000o0
+___00000o000o000o0_000o000o00000o0
+___0o00oo00o0o00o0__0000o0o0o00000
+___0o0o00000o00o0___000o0o0o0o0o00
+____0o0o0000o0o0_____0000o00o00o0
+_____0000o0000________ 00o000o000
+______0000000___________0000000
+________00____@pedrovotf____00
+_______00_______  :] ________00
+______00______________________00
+_____00________TIM-TIM!!!______00
+____00__________________________00
+_000000________________________000000
+        */
+    </script>
+</main>
+</body>
+</html>
